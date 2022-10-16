@@ -1,0 +1,1 @@
+{"name":"Local: problem 148a","url":"c:\\Users\\Dell\\Desktop\\code forces\\problem 148a.cpp","tests":[{"id":1665155345795,"input":"1\n2\n3\n4\n12\n","output":"12\n"},{"id":1665155353613,"input":"2\n3\n4\n5\n24","output":"17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dell\\Desktop\\code forces\\problem 148a.cpp","group":"local","local":true}

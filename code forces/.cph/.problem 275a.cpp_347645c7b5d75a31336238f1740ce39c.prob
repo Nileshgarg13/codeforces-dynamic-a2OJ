@@ -1,0 +1,1 @@
+{"name":"Local: problem 275a","url":"c:\\Users\\Dell\\Desktop\\code forces\\problem 275a.cpp","tests":[{"id":1664531459106,"input":"1 0 0\n0 0 0\n0 0 1","output":"001\n010\n100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dell\\Desktop\\code forces\\problem 275a.cpp","group":"local","local":true}

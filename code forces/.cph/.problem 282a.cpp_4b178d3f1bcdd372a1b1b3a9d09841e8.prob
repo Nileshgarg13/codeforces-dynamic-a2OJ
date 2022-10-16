@@ -1,0 +1,1 @@
+{"name":"Local: problem 282a","url":"c:\\Users\\Dell\\Desktop\\code forces\\problem 282a.cpp","tests":[{"id":1665673921699,"input":"1\n++X\n","output":"1"},{"id":1665673937057,"input":"2\nX++\n--X\n","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dell\\Desktop\\code forces\\problem 282a.cpp","group":"local","local":true}

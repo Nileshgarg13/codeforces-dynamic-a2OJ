@@ -1,0 +1,1 @@
+{"name":"Local: problem 228a","url":"c:\\Users\\Dell\\Desktop\\code forces\\problem 228a.cpp","tests":[{"id":1665168572775,"input":"1 7 3 3\n","output":"1"},{"id":1665168579852,"input":"7 7 7 7","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dell\\Desktop\\code forces\\problem 228a.cpp","group":"local","local":true}
