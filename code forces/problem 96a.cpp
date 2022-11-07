@@ -1,42 +1,23 @@
-#include <bits/stdc++.h>
+#include<iostream>
+
 using namespace std;
-int main()
-{
-    string s;
-    cin>>s;
-    for(int i=0;i<s.size();i++)
-    {
-        if(s[i]==0)
-        {
-            int count0=0;
-            for(int j=i;j<7;j++)
-            {
-                if(s[i]==0)
-                {
-                    count0++;
-                }
+
+int main(){
+    string s1;
+    cin>>s1;
+    int condition = 1;
+    for(int i=1; i<=s1.length(); i++){
+        if(s1[i] == s1[i-1]){
+            condition++;
+            if(condition==7){
+                cout<<"YES"<<endl;
+                return 0;
             }
-            if(count0==7)
-            {
-                cout<<"YES";
-            }
+        }else{
+            condition=1;
         }
-        else if(s[i]==1)
-        {
-            int count1=0;
-            for(int j=i;j<7;j++)
-            {
-                if(s[i]==1)
-                {
-                    count1++;
-                }
-            }
-            if(count1==7)
-            {
-                cout<<"YES";
-            }
-        }
+        
     }
-    cout<<"KKK";
+    cout<<"NO"<<endl;
     return 0;
 }
