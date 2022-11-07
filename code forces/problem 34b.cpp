@@ -7,11 +7,7 @@ int main()
     int m;
     cin>>m;
     int arr[n];
-    if(n==1 && m ==1)
-    {
-        cout<<2;
-    }
-    else{
+    
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];
@@ -26,6 +22,6 @@ int main()
             ans+=arr[i];
         }
     }
-    cout<<abs(ans);}
+    cout<<abs(ans);
     return 0;
 }
