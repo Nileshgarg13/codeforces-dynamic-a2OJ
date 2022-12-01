@@ -1,68 +1,50 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+
 using namespace std;
+
 int main()
 {
-    int n;
-    cin>>n;
-    int x1,y1,x2,y2;
-    cin>>x1>>y1>>x2>>y2;
-    char arr[n];
-    for(int i=0;i<n;i++)
+    int t, sx, sy, ex, ey, time(-1);
+    string wind;
+    cin >> t >> sx >> sy >> ex >> ey >> wind;
+    for (int i = 0; i < t; ++i)
     {
-        cin>>arr[i];
-    }
-    int xdiff,ydiff;
-    xdiff=x1-x2;
-    ydiff=y1-y2;
-    int countn,counte,countw,counts;
-    for(int j=0;j<n;j++)
-    {
-        if(arr[j]=='N')
+        switch (wind[i])
         {
-            countn++;
+        case 'E':
+            if (sx < ex)
+            {
+                sx += 1;
+            }
+            break;
+        case 'S':
+            if (sy > ey)
+            {
+                sy -= 1;
+            }
+            break;
+        case 'W':
+            if (sx > ex)
+            {
+                sx -= 1;
+            }
+            break;
+        case 'N':
+            if (sy < ey)
+            {
+                sy += 1;
+            }
+            break;
+        default:
+            break;
         }
-        else if(arr[j]=='S')
+        if (sx == ex && sy == ey)
         {
-            counts++;
-        }
-        else if(arr[j]=='E')
-        {
-            counte++;
-        }
-        else if(arr[j]=='W')
-        {
-            countw++;
-        }
-    }
-    int ans=0;
-    if(ydiff>=0)
-    {
-        if(countn>=ydiff)
-        {
-            ans++;
-        }
-    }
-    else if(ydiff<0)
-    {
-        if(counts>=abs(ydiff))
-        {
-            ans++;
+            time = i + 1;
+            break;
         }
     }
-    else if(xdiff>=0)
-    {
-        if(counte>=xdiff)
-        {
-            ans++;
-        }
-    }
-    else if(xdiff<0)
-    {
-        if(countw>=abs(xdiff))
-        {
-            ans++;
-        }
-    }
-    
+    cout << time << endl;
     return 0;
 }
