@@ -31,4 +31,4 @@ int main()
         }
     }
     cout << ((strictly_less || strictly_more) ? "YES" : "NO") << endl;
-    return 0;}z
+    return 0;}
